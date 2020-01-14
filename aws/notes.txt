@@ -1,0 +1,35 @@
+aws s3api get-bucket-lifecycle --bucket <name>
+aws s3api put-bucket-lifecycle --bucket <name> --lifecycle-configuration file://file.json
+
+
+aws s3api list-buckets --query "Buckets[].Name"
+
+
+  get-object-retention
+--bucket <value>
+--key <value>
+[--version-id <value>]
+[--request-payer <value>]
+[--cli-input-json <value>]
+[--generate-cli-skeleton <value>]
+
+
+  list-objects
+--bucket <value>
+[--delimiter <value>]
+[--encoding-type <value>]
+[--prefix <value>]
+[--request-payer <value>]aws s3api get-bucket-location --bucket
+[--cli-input-json <value>]
+[--starting-token <value>]
+[--page-size <value>]
+[--max-items <value>]
+[--generate-cli-skeleton <value>]
+
+aws s3api list-objects  --bucket mentaljolt.com --query 'Contents[].{Key: Key, StorageClass: StorageClass}'
+[
+    {
+        "Key": "happy.png",
+        "StorageClass": "STANDARD"
+    }
+]

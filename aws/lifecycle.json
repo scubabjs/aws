@@ -1,0 +1,10 @@
+[
+    {'ID': 'S3 30day StandardIA 90day Glacier Transition Rule', 'Filter': {'Prefix': ''
+        }, 'Status': 'Enabled', 'Transitions': [
+            {'Days': 300, 'StorageClass': 'STANDARD_IA'
+            },
+            {'Days': 900, 'StorageClass': 'GLACIER'
+            }
+        ]
+    }
+]
